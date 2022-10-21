@@ -22,21 +22,21 @@ const App = () => {
      <Navbar />
 
      <Routes>
-      <Route path='/' exact element={<Introsection />} />
+      <Route path='/hotel' exact element={<Introsection />} />
      {/* <Introsection /> */}
-     <Route path='/market-research' element={<Carousel />} />
+     <Route path='/hotel/market-research' element={<Carousel />} />
      {/* <Carousel /> */}
 
-     <Route path='/reserved' element={<ReserManagement />} />
+     <Route path='/hotel/reserved' element={<ReserManagement />} />
      {/* <ReserManagement />
      <FastReport />
      <Countsection />
 
      <Download /> */}
 
-     <Route path='/fastreport' element={<FastReport />} />
-     <Route path='/countsection' element={<Countsection />} />
-     <Route path='/download' element={<Download />} />
+     <Route path='/hotel/fastreport' element={<FastReport />} />
+     <Route path='/hotel/countsection' element={<Countsection />} />
+     <Route path='/hotel/download' element={<Download />} />
      </Routes>
      <Footer />
      </BrowserRouter>
