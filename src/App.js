@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap'
+import './App.css'
+import Carousel from './components/Carousel'
+import FastReport from './components/FastReport'
+import Introsection from './components/Introsection'
+import Navbar from './components/Navbar'
+import ReserManagement from './components/ReserManagement'
+import Countsection from './components/Countsection'
 
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Download from './components/Download'
+
+import Footer from './components/Footer'
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+    <BrowserRouter>
+     <Navbar />
+
+     <Routes>
+      <Route path='/' exact element={<Introsection />} />
+     {/* <Introsection /> */}
+     <Route path='/market-research' element={<Carousel />} />
+     {/* <Carousel /> */}
+
+     <Route path='/reserved' element={<ReserManagement />} />
+     {/* <ReserManagement />
+     <FastReport />
+     <Countsection />
+
+     <Download /> */}
+
+     <Route path='/fastreport' element={<FastReport />} />
+     <Route path='/countsection' element={<Countsection />} />
+     <Route path='/download' element={<Download />} />
+     </Routes>
+     <Footer />
+     </BrowserRouter>
+     
+
+     
+     
+  
+  )
 }
 
-export default App;
+export default App

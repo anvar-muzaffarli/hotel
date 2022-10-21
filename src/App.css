@@ -1,38 +1,375 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Roboto:wght@100;300;400;700&display=swap');
+ * {
+  font-family: 'Nunito';
+ }
+
+/* NAVBAR UCUN */
+/* dropdown custom */
+.bg-color {
+  border: none;
+  background-color: #dedede;
+  border-radius: 1px;
+  width: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0,0,0,.7);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow-x: hidden;
+  transform: scale(0);
+  transition: .8s ease;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.overlay-active {
+  transform: scale(1);
+}
+
+.overlay h1 {
+  color: #fff;
+}
+
+.overlay input {
+  margin-top: 10px;
+  width: 100%;
+  background-color: transparent;
+
+}
+
+.overlay textarea {
+  background-color: transparent;
+  width: 100%;
+
+}
+.overlay form {
+  width: 50%;
+}
+
+.overlay input:focus {
+  /* margin-top: 10px;
+  width: 100%; */
+  background-color: transparent;
+
+}
+
+/* icon gorunmemelidi */
+
+.navbar button {
+  display: none;
+}
+.collapsed {
+  display: none;
+}
+
+
+
+/* navbar button rengi */
+
+.collapsed,
+.collapsed:focus {
+  background-color: transparent !important;
+}
+
+
+
+.button {
+  background-color: #142D71;
+  color: #fff;
+  width: 98px;
+  height: 42px;
+  display: block !important;
+  
+}
+
+.introsection-left {
+  padding-left: 130px;
+  padding-top: 174px;
+}
+
+.introsection-right {
+  position: relative;
+
+}
+
+.introsection-right .rightimg {
+  width: 100%;
+  border-bottom-left-radius: 415px;
+  
+}
+
+.introsection-right .pulse {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+}
+
+.button-groups button {
+  
+  margin-right: 15px !important;
+  border: none;
+  
+}
+
+.card {
+  /* width: 350px; */
+  /* min-width: 95% !important; */
+  min-width: 300px;
+  
+  
+ 
+}
+
+.card img {
+  width: 200px;
+  height: 140px;
+}
+
+
+
+/* swiper */
+.swiper {
+  max-width: 95%;
+}
+
+.swiper-wrapper {
+  padding: 48px;
+}
+
+
+.carousel-bg {
+  background: linear-gradient(135deg, #192B74 0.42%, #2946A1 100%);
+  padding: 25px;
+}
+
+ .swiper-pagination-bullets .swiper-pagination-horizontal {
+  background-color: orange;
+}
+
+
+
+
+
+/* RESERVATION MANAGEMENT */
+
+.options .option button:not(:first-child) {
+  background-color:#EDF3FF;
+  
+}
+
+.options .option button:first-child {
+  background: linear-gradient(135deg, #192B74 0.42%, #2946A1 100%);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.reservimg {
+ 
+  width: 50%;
+}
+
+
+/* fastreport and resermanagement */
+
+.pink-btn {
+  background: #FFEDEC;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  margin-top: 10px;
+
+}
+
+
+.reservcontainer {
+  padding: 131px 150px;
+}
+
+
+
+
+.countupsection {
+  padding: 194px 251px;
+  background: linear-gradient(135deg, #192B74 0.42%, #2946A1 100%);
+mix-blend-mode: normal;
+opacity: 0.7;
+}
+
+
+.count {
+  font-size: 72px;
+}
+
+.singlecount {
+  /* background-color: red; */
+  width: 94%;
+  height: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.singlecount h3 {
+text-align: center;
+color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+/* count up ucun */
+
+span.count {
+  color:white;
+}
+
+
+/* download app section */
+
+.download-app {
+  padding: 130px 305px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.download-app button {
+  border: none;
+  width: 170px;
+  height: 54px;
+  padding: 7px 20px;
+  background: #142D71;
+border-radius: 27px;
+font-size: 12px;
+margin-top: 10px;
+color: #fff;
+
+}
+
+.download-app button img {
+  margin-right: 10px;
+}
+
+
+/* footer */
+
+.footer {
+  padding: 72px 222px 0px 150px;
+}
+.footer .col-lg-2 {
+  padding-bottom: 40px;
+}
+.footer .col-lg-2 a {
+  display: flex;
+  color:#77838F;
+  text-decoration: none;
+  
+}
+
+.footer .col-12:last-child {
+  border-top: 1px solid #dedede;
+  text-align: center;
+  padding: 40px 0
+}
+
+
+
+/* @media queries */
+
+@media(max-width:768px) {
+/* react-iconsdan goturduyumuz iconlar */
+
+  .collapsed {
+    display: block;
+    border: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar button {
+    display: block;
+  }
+
+  
+
+  .navbar button {
+    background-color: transparent;
+    border: none;
+  }
+
+
+  .introsection-left {
+    padding: 20px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .introsection {
+    padding-right: 0;
+    margin-right: 0;
+
+  }
+
+  .introsection-right {
+    padding-right: 0;
+  }
+
+  .card {
+    margin-left: 5px !important;
+  }
+
+  /* swiper wrapper */
+
+  .swiper-wrapper {
+    padding-left: 2px;
+  }
+/* reservcontainer */
+.reservcontainer {
+
+  padding: 60px;
+  text-align: center;
+}
+
+  /* countupsection */
+  .countupsection {
+    padding: 40px;
+  }
+
+  /* download app section */
+
+  .download-app {
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 40px;
+    padding-top: 120px;
+  }
+
+}
+
+@media(max-width:1000px) and (min-width:710px) {
+  .card {
+    margin-left: 45px !important;
+  }
+
+  /* swiper wrapper */
+
+  .swiper-wrapper {
+    padding-left: 15px;
   }
 }
