@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hotel/static/css/main.962b7247.css",
+    "main.js": "/hotel/static/js/main.fc12b43f.js",
+    "static/media/logo.svg": "/hotel/static/media/logo.e4005e6877cf9c613d97895e29ea5162.svg",
+    "static/media/apple.svg": "/hotel/static/media/apple.94c7732b7ddb525625071d7669641d79.svg",
+    "static/media/google.svg": "/hotel/static/media/google.ecd565824574981076b95064490d3bee.svg",
+    "static/media/playbtnPulls.svg": "/hotel/static/media/playbtnPulls.96344ea3cd3f109d748e3dfdf3df10ca.svg",
+    "static/media/right.svg": "/hotel/static/media/right.f42735fe950d1e6c511fc6c52e241ce9.svg",
+    "index.html": "/hotel/index.html",
+    "static/media/playbtn.svg": "/hotel/static/media/playbtn.c789f50f28603bec0729a7c57b4c48cc.svg",
+    "static/media/intro-img.svg": "/hotel/static/media/intro-img.38acd8710d4278f6ac2743926dbc8cc9.svg",
+    "static/media/wave.svg": "/hotel/static/media/wave.9f9ecd0982c040edca0daa07b015c712.svg",
+    "static/media/blankImg.svg": "/hotel/static/media/blankImg.679b09025dcf90cfc7dc469e1baa6f64.svg",
+    "static/media/reservimg.svg": "/hotel/static/media/reservimg.e9aa74f128b6f404bf52280f62803670.svg",
+    "main.962b7247.css.map": "/hotel/static/css/main.962b7247.css.map",
+    "main.fc12b43f.js.map": "/hotel/static/js/main.fc12b43f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.962b7247.css",
+    "static/js/main.fc12b43f.js"
+  ]
+}
